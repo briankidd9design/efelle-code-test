@@ -13,7 +13,6 @@ h1 {
   /* font-weight: bold; */
 }
 h2 {
-  font-family: "Architects Daughter", cursive;
   font-size: 3rem;
 }
 h3 {
@@ -70,6 +69,7 @@ a {
 }
 .nav__item a:hover {
   color: #fefefd;
+  text-decoration: none;
 }
 .nav__phone {
   position: absolute;
@@ -104,6 +104,10 @@ a {
   text-shadow: 0 0 15px black, 0 0 30px #333333, 0 0 40px #cccccc;
 }
 
+.banner-content h2 {
+  font-family: "Architects Daughter", cursive;
+}
+
 .btn-cta {
   background: #446286;
   color: #fefefd;
@@ -129,6 +133,19 @@ a {
   width: 8rem;
   background-color: #fefefd;
 }
+/* services */
+.services {
+  background: url(../images/woodgrain-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #333;
+}
+.services-top {
+  padding: 6rem 0;
+}
+.services-line-1 {
+  margin: 0 auto;
+}
 
 @media screen and (min-width: 1025px) {
   /* typography */
@@ -140,7 +157,6 @@ a {
     font-size: 7rem;
   }
   h2 {
-    font-family: "Architects Daughter", cursive;
     font-size: 5rem;
   }
   h3 {
