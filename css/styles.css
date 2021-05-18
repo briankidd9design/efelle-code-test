@@ -10,7 +10,6 @@ body {
 h1 {
   font-size: 5rem;
   margin: 0;
-  /* font-weight: bold; */
 }
 h2 {
   font-size: 3rem;
@@ -22,6 +21,7 @@ h4 {
   font-size: 1.6rem;
 }
 header {
+  z-index: 1;
   position: sticky;
   top: 0;
 }
@@ -29,6 +29,12 @@ header {
 
 a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a {
+  color: #446286;
 }
 .logo {
   width: 60%;
@@ -103,11 +109,9 @@ a {
   color: #fefefd;
   text-shadow: 0 0 15px black, 0 0 30px #333333, 0 0 40px #cccccc;
 }
-
 .banner-content h2 {
   font-family: "Architects Daughter", cursive;
 }
-
 .btn-cta {
   background: #446286;
   color: #fefefd;
@@ -139,12 +143,73 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #333;
+  padding: 0 0 8rem 0;
 }
 .services-top {
-  padding: 6rem 0;
+  padding: 8rem 0 6rem 0;
 }
 .services-line-1 {
   margin: 0 auto;
+  width: 8rem;
+  height: 0.3rem;
+  background-color: #7f7f7d;
+}
+.services-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.circle-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 51, 51, 0.75);
+  border-radius: 50%;
+  width: 22rem;
+  height: 22rem;
+  color: #fefefd;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.circle-overlay:hover {
+  transform: scale(1.3);
+}
+.services-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-overlay h3:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 4rem;
+  border-bottom: 0.3rem solid #fefefd;
+}
+.circle-overlay:hover h3:after {
+  transform: scaleX(1.8);
+}
+.footer {
+  background: #222427;
+  padding: 4rem 15rem 5rem 15rem;
+  color: #fefefd;
+}
+.footer__social-icon {
+  padding: 1.5rem 0.75rem;
+}
+.footer__top {
+  font-size: 1.5rem;
+}
+.footer__copyright {
+  font-size: 1.3rem;
+  color: #7f7f7d;
 }
 
 @media screen and (min-width: 1025px) {
@@ -221,6 +286,13 @@ a {
   }
   .banner-line-1 {
     margin: -0.5rem 0 3rem 0;
+  }
+  /* services */
+  .services-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 769px) {
