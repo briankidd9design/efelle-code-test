@@ -106,26 +106,26 @@
 			<div class="footer__phone">
 				<span class="">206.384.4909</span><br>
 				<span class="">866.396.7520</span><br>
-				<a href="https://www.facebook.com/SeattleWebsiteDesign/" target="_blank"><img alt="facebook icon" class="footer__social-icon" src="images/facebook.png"></a> <a href="https://www.pinterest.com/efellecreative/" target="_blank"><img alt="pinterest icon" class="footer__social-icon" src="images/pinterest.png"></a>
+				<a href="https://www.facebook.com/SeattleWebsiteDesign/" target="_blank"><img src="images/facebook.png" class="footer__social-icon" alt="facebook icon"></a> <a href="https://www.pinterest.com/efellecreative/" target="_blank"><img src="images/pinterest.png" class="footer__social-icon" alt="pinterest icon"></a>
 			</div>
 		</div>
 		<div class="footer__bottom">
 			&copy; 
 			<script>
-			document.write(new Date().getFullYear())
+			         document.write(new Date().getFullYear())
 			</script> efelle Creative. All rights reserved.<br>
 			<a href="#">Legal Information</a>
 		</div>
 	</footer>
 	<script>
-	      //  script for active nav links
-	       let activeLinks = document.querySelectorAll("a.nav__link");
-	        activeLinks.forEach((activeLink) => {
-	         activeLink.addEventListener("click", function () {
-	           activeLinks.forEach((al) => al.classList.remove("active"));
-	           this.classList.add("active");
-	         });
-	       });
+	         //  script for active nav links
+	          let activeLinks = document.querySelectorAll("a.nav__link");
+	           activeLinks.forEach((activeLink) => {
+	            activeLink.addEventListener("click", function () {
+	              activeLinks.forEach((al) => al.classList.remove("active"));
+	              this.classList.add("active");
+	            });
+	          });
 	</script>
 </body>
 </html>
